@@ -41,6 +41,6 @@ No hallucinated libraries or APIs were found in the verified parts; the unverifi
 
 ## 6. My own notes (fill in before submitting)
 
-- What I changed or reviewed myself:
-- What I verified on my machine (build, tests, Supabase login, deployment URL):
-- What I would improve next:
+- What I changed or reviewed myself: I reviewed the project requirements, configured the Supabase project and environment variables, and set up the Vercel project. I reviewed the login, analysis, and report workflow.
+- What I verified on my machine (build, tests, Supabase login, deployment URL): The 22 unit tests passed, TypeScript checking passed, and the production build completed successfully locally. The local login page loaded. I confirmed that the four expected tables exist in Supabase. I have not yet verified a successful Supabase sign-in or analysis saved to the database. My deployment URL is https://threads-analytics-sooty.vercel.app/login/.
+-What I would improve next: Fix and push the remaining Supabase cookie type changes, redeploy, and verify sign-in and one mock analysis on the deployed app. Then check multi-account comparison, CSV/JSON downloads, and RLS access between users.
